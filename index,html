@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff8e9">
+<meta name="description" content="Dr. Ragavi and Dr. Selvam Engagement Invitation">
+<title>Ragavi ❤️ Selvam | Engagement Invitation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --gold:#b18a42;
+  --dark:#704a20;
+  --cream:#fff8e9;
+  --maroon:#791f32;
+  --light:#f4e8cd;
+}
+
+* {box-sizing:border-box}
+
+html {scroll-behavior:smooth}
+
+body {
+  margin:0;
+  background:var(--cream);
+  color:var(--dark);
+  font-family:'Noto Sans Tamil',serif;
+  text-align:center;
+}
+
+.hero {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:30px 18px;
+  background:
+    radial-gradient(circle at top,#fffdf5,#f4e4bf 75%);
+}
+
+.frame {
+  max-width:650px;
+  width:100%;
+  padding:38px 22px;
+  background:#fffdf8;
+  border:2px solid var(--gold);
+  outline:1px solid var(--gold);
+  outline-offset:6px;
+  box-shadow:0 12px 40px #72501d20;
+  position:relative;
+  overflow:hidden;
+}
+
+.frame:before,.frame:after {
+  content:"✧ ❀ ✧";
+  display:block;
+  color:var(--gold);
+  font-size:25px;
+  margin:10px;
+}
+
+.ganesha {
+  font-size:55px;
+  margin:12px;
+}
+
+.english {
+  font-family:'Playfair Display',serif;
+}
+
+.small {
+  letter-spacing:3px;
+  font-size:12px;
+  color:var(--gold);
+}
+
+h1 {
+  color:var(--maroon);
+  font-family:'Playfair Display',serif;
+  font-size:clamp(32px,8vw,48px);
+  line-height:1.3;
+}
+
+h2 {
+  color:var(--maroon);
+  font-size:25px;
+}
+
+.names {
+  font-family:'Playfair Display',serif;
+  font-size:clamp(27px,7vw,39px);
+  color:var(--dark);
+  line-height:1.6;
+}
+
+.tamil {
+  font-family:'Noto Sans Tamil',serif;
+  line-height:2;
+}
+
+.section {
+  padding:65px 18px;
+  border-bottom:1px solid #e8d5ad;
+}
+
+.card {
+  max-width:500px;
+  margin:22px auto;
+  padding:25px 18px;
+  background:#fffdf7;
+  border:1px solid #d7b975;
+  border-radius:12px;
+  box-shadow:0 8px 25px #805a2010;
+  line-height:2;
+}
+
+.date {
+  font-family:'Playfair Display',serif;
+  font-size:30px;
+  color:var(--maroon);
+}
+
+.countdown {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:25px auto;
+}
+
+.time {
+  background:#f2e5c8;
+  padding:12px;
+  min-width:70px;
+  border-radius:8px;
+}
+
+.time strong {
+  display:block;
+  font-size:25px;
+  color:var(--maroon);
+}
+
+button,.btn {
+  display:inline-block;
+  background:var(--maroon);
+  color:white;
+  border:0;
+  padding:13px 22px;
+  border-radius:30px;
+  text-decoration:none;
+  margin:10px 5px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+button:hover,.btn:hover {
+  background:var(--dark);
+}
+
+.photo {
+  width:100%;
+  max-width:380px;
+  border:5px solid #e6d1a3;
+  border-radius:12px;
+  margin:15px auto;
+  display:block;
+}
+
+footer {
+  background:var(--light);
+  padding:35px 15px;
+  line-height:2;
+}
+
+#invitation {display:none}
+
+.fade {
+  animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity:0;transform:translateY(20px)}
+  to {opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME SCREEN -->
+<div class="hero" id="opening">
+  <div class="frame fade">
+    <div class="ganesha">🙏</div>
+    <p class="tamil">ஸ்ரீ கணேஷாய நம:</p>
+    <p class="small">WITH THE BLESSINGS OF OUR ELDERS</p>
+    <h1 class="english">You're Invited!</h1>
+    <p class="tamil">
+      எங்கள் இல்லத்தின் இனிய நன்னாளில்<br>
+      தங்களையும் அன்புடன் வரவேற்கிறோம்.
+    </p>
+    <p>❤️</p>
+    <button onclick="openInvitation()">Open Invitation ✨</button>
+  </div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<main id="invitation">
+
+<section class="hero">
+ <div class="frame fade">
+   <div class="ganesha">🪷 🙏 🪷</div>
+   <p class="small">|| A BEAUTIFUL BEGINNING ||</p>
+   <p class="tamil">இறைவன் அருளாலும், பெரியோர்கள் ஆசியாலும்</p>
+   <h1 class="english">Engagement Ceremony</h1>
+
+   <p>With hearts full of happiness,</p>
+   <p>we invite you to celebrate our special day.</p>
+
+   <div class="names">
+     Dr. V. Ragavi
+     <div style="font-size:20px;color:#b18a42">&</div>
+     Dr. R. Selvam
+   </div>
+
+   <p class="tamil">
+     டாக்டர் வி. ராகவி, பி.டி.எஸ்.<br>
+     &<br>
+     டாக்டர் ஆர். செல்வம்,<br>
+     எம்.எஸ்சி. (அக்ரி.), பி.எச்.டி.
+   </p>
+
+   <p class="tamil">தங்களின் வருகையும் வாழ்த்துகளும் எங்களுக்கு மகிழ்ச்சி அளிக்கும்.</p>
+   <p>❤️</p>
+ </div>
+</section>
+
+<section class="section">
+  <p class="small">SAVE THE DATE</p>
+  <h2 class="tamil">நாள் குறித்துக் கொள்ளுங்கள்</h2>
+  <h2 class="english">13 December 2026</h2>
+  <p class="tamil">ஞாயிற்றுக்கிழமை</p>
+
+  <div class="countdown">
+    <div class="time"><strong id="days">00</strong>Days</div>
+    <div class="time"><strong id="hours">00</strong>Hours</div>
+    <div class="time"><strong id="minutes">00</strong>Minutes</div>
+    <div class="time"><strong id="seconds">00</strong>Seconds</div>
+  </div>
+
+  <div class="card">
+    <h2>🕥 Muhurtham Time</h2>
+    <div class="date">10:30 AM – 12:30 PM</div>
+    <p class="tamil">காலை 10:30 மணி முதல் மதியம் 12:30 மணி வரை</p>
+  </div>
+</section>
+
+<section class="section">
+  <p class="small">VENUE DETAILS</p>
+  <h2 class="tamil">விழா நடைபெறும் இடம்</h2>
+
+  <div class="card">
+    <h2>🏛️ Mangalam Mahal</h2>
+    <h3 class="tamil">மங்களம் மஹால்</h3>
+    <p class="tamil">
+      செந்துறை ரோடு,<br>
+      ஜெயங்கொண்டம்,<br>
+      அரியலூர் மாவட்டம்,<br>
+      தமிழ்நாடு.
+    </p>
+    <a class="btn" id="mapLink" target="_blank" rel="noopener">
+      📍 Google Maps Directions
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="tamil">அன்புடன் அழைக்கிறோம்!</h2>
+  <h2 class="english">We Await Your Presence</h2>
+  <p class="tamil">
+    தங்களின் பொன்னான வருகையால்<br>
+    எங்கள் விழாவினை சிறப்பிக்குமாறு<br>
+    அன்புடன் கேட்டுக்கொள்கிறோம்.
+  </p>
+  <p>With Love & Blessings ❤️</p>
+
+  <button onclick="shareInvitation()">
+    💌 Share via WhatsApp
+  </button>
+
+  <button onclick="window.print()">
+    🖨️ Print Invitation
+  </button>
+</section>
+
+<footer>
+  <div style="font-size:35px">🪷</div>
+  <p class="english">Ragavi & Selvam</p>
+  <p class="tamil">உங்கள் வருகையை அன்புடன் எதிர்பார்க்கிறோம்.</p>
+  <p>13 • 12 • 2026</p>
+  <p style="font-size:12px">Made with Love ❤️</p>
+</footer>
+
+</main>
+
+<script>
+
+// Engagement date and time (Indian Standard Time)
+const eventDate = new Date("2026-12-13T10:30:00+05:30");
+
+// Venue location
+const venue = "Mangalam Mahal, Sendurai Road, Jayankondam, Ariyalur, Tamil Nadu, India";
+
+document.getElementById("mapLink").href =
+"https://www.google.com/maps/search/?api=1&query=" +
+encodeURIComponent(venue);
+
+// Open invitation
+function openInvitation() {
+  document.getElementById("opening").style.display = "none";
+  document.getElementById("invitation").style.display = "block";
+  window.scrollTo(0,0);
+}
+
+// Countdown
+function updateCountdown() {
+  const now = new Date();
+  const diff = eventDate - now;
+
+  if (diff <= 0) {
+    document.querySelector(".countdown").innerHTML =
+    "<h2>Our Special Day is Here! ❤️</h2>";
+    return;
+  }
+
+  document.getElementById("days").textContent =
+  Math.floor(diff / 86400000);
+
+  document.getElementById("hours").textContent =
+  Math.floor(diff / 3600000) % 24;
+
+  document.getElementById("minutes").textContent =
+  Math.floor(diff / 60000) % 60;
+
+  document.getElementById("seconds").textContent =
+  Math.floor(diff / 1000) % 60;
+}
+
+updateCountdown();
+setInterval(updateCountdown,1000);
+
+// WhatsApp share
+function shareInvitation() {
+  const message =
+  "💍 We're Getting Engaged! 💍\n\n" +
+  "Dr. V. Ragavi ❤️ Dr. R. Selvam\n\n" +
+  "📅 13 December 2026\n" +
+  "🕥 10:30 AM - 12:30 PM\n" +
+  "📍 Mangalam Mahal, Sendurai Road, Jayankondam, Ariyalur\n\n" +
+  "Please join us and bless us!\n\n" +
+  window.location.href;
+
+  window.open(
+    "https://wa.me/?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+}
+</script>
+
+</body>
+</html>
